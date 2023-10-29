@@ -72,7 +72,7 @@ namespace API_Parcial3.Controllers
                     return NotFound("The hotel with the specified ID does not exist."); //NotFound = 404 Http Status Code
                 }
 
-                return Ok(editedHotel);//Retorne un 200 y el objeto Country
+                return Ok(editedHotel);//Retorne un 200
             }
             catch (Exception ex)
             {
