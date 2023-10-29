@@ -59,7 +59,7 @@ namespace API_Parcial3.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("Address")
+                    b.HasIndex("Address", "City")
                         .IsUnique();
 
                     b.ToTable("Hotels");

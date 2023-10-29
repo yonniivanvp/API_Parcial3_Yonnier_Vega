@@ -51,9 +51,9 @@ namespace API_Parcial3.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Hotels_Address",
+                name: "IX_Hotels_Address_City",
                 table: "Hotels",
-                column: "Address",
+                columns: new[] { "Address", "City" },
                 unique: true);
 
             migrationBuilder.CreateIndex(

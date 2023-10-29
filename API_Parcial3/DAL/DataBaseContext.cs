@@ -14,7 +14,7 @@ namespace API_Parcial3.DAL
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<Hotel>().HasIndex(c => c.Address).IsUnique();
+            modelBuilder.Entity<Hotel>().HasIndex("Address", "City").IsUnique();
 
             modelBuilder.Entity<Room>().HasIndex("Number", "HotelId").IsUnique();
         }

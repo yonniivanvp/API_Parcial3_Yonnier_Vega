@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace API_Parcial3.Migrations
 {
     [DbContext(typeof(DataBaseContext))]
-    [Migration("20231028223114_initialDb")]
+    [Migration("20231028223848_initialDb")]
     partial class initialDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -61,7 +61,7 @@ namespace API_Parcial3.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("Address")
+                    b.HasIndex("Address", "City")
                         .IsUnique();
 
                     b.ToTable("Hotels");
