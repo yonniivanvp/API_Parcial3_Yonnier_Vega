@@ -15,7 +15,7 @@ namespace API_Parcial3.DAL.Entities
         [Range(101, int.MaxValue)]
         public int MaxGuests { get; set; }
 
-        [Display(Name = "Disponibilidad")]
+        [Display(Name = "Availability")]
         [Required(ErrorMessage = "¡Field {0} is required!")]
         public bool Availability { get; set; }
 

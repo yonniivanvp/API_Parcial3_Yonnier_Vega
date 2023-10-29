@@ -13,13 +13,13 @@ namespace API_Parcial3.DAL
             _context = context;
         }
 
-        //Prepoblar las diferentes tablas de la BD
+        //Prepopulate the different database tables
         public async Task SeederAsync() 
         {
-            //Metodo que crea la BD inmediatamente se ponga en ejecucion la API
+            //Method that creates the DB immediately the API is executed
             await _context.Database.EnsureCreatedAsync();
 
-            //Crear metodos que sirven para prepoblar la BD
+            //Create methods that serve to repopulate the DB
             await PopulateHotelsAsync();
 
             await _context.SaveChangesAsync();
